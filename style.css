@@ -1,0 +1,26 @@
+.container {
+    padding-top: 2%;
+}
+.row {
+    padding-bottom: 2%;
+}
+body {
+    background-image: linear-gradient(to right, #059bcb, #74c4bc);
+}
+p, h2, h4 {
+    color: white;
+}
+hr {
+    background-color: white;
+}
+.button {
+    font-weight: 500;
+    background-color: #059bcb;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}

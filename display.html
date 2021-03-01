@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Details</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-4">
+			<h4>Chek your Information</h4>
+		</div>
+	</div>
+	<hr>
+	<div class="col-md-12 form-group">
+            <div class="row">
+                <div class="col-3">
+                    <p>Your Name</p>
+                </div>
+                <div class="col-1">
+                    <p id="fname"></p>
+                </div>
+                <div class="col-1">
+                    <p id="lname"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Your Age</p>
+                </div>
+                <div class="col-3">
+                    <p id="age"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Your Email</p>
+                </div>
+                <div class="col">
+                    <p id="email"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Phone</p>
+                </div>
+                <div class="col">
+                    <p id="phone"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Address</p>
+                </div>
+                <div class="col">
+                    <p id="address"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Zip Code</p>
+                </div>
+                <div class="col-3">
+                    <p id="zipcode"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <script>
+        let queryString = window.location.search;
+        let urlParams = new URLSearchParams(queryString);
+        document.getElementById("fname").innerHTML = urlParams.get("fname");
+        document.getElementById("lname").innerHTML = urlParams.get("lname");
+        document.getElementById("age").innerHTML = urlParams.get("age");
+        document.getElementById("email").innerHTML = urlParams.get("email");
+        document.getElementById("phone").innerHTML = urlParams.get("num1") + urlParams.get("num2") +urlParams.get("num3");
+        document.getElementById("address").innerHTML = urlParams.get("address");
+        document.getElementById("zipcode").innerHTML = urlParams.get("zipcode");
+    </script>
+</body>
+</html>
